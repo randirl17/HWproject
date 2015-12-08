@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+<head>
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var e="wtsrt_",g="tbsd_",h="tbnd_",k="start",l="_wtsrt",m="_tbnd",n="CSI/";(function(){function f(a){this.t={};this.tick=function(a,c,b){this.t[a]=[void 0!=b?b:(new Date).getTime(),c];if(void 0==b)try{window.console.timeStamp(n+a)}catch(d){}};this.tick(k,null,a)}var a;window.performance&&(a=window.performance.timing);var p=a?new f(a.responseStart):new f;window.jstiming={Timer:f,load:p};if(a){var c=a.navigationStart,d=a.responseStart;0<c&&d>=c&&(window.jstiming.srt=d-c)}if(a){var b=window.jstiming.load;0<c&&d>=c&&(b.tick(l,void 0,c),b.tick(e,l,d),b.tick(g,e))}try{a=null,
+window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),b&&0<c&&(b.tick(m,void 0,window.chrome.csi().startE),b.tick(h,m,c))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,b&&0<c&&(b.tick(m,void 0,window.external.startE),b.tick(h,m,c))),a&&(window.jstiming.pt=a)}catch(q){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="//www.google.com/images/icons/product/sites-16.ico" />
+<link rel="apple-touch-icon" href="https://ssl.gstatic.com/sites/p/d39cce/system/app/images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { var d="",g="__duration__",h="function";function k(c){return document.getElementById(c)}window.byId=k;function l(c){return c.replace(/^\s+|\s+$/g,d)}window.trim=l;var m=[],n=0;window.JOT_addListener=function(c,a,b){var e=new String(n++);c={eventName:c,handler:a,compId:b,key:e};m.push(c);return e};window.JOT_removeListenerByKey=function(c){for(var a=0;a<m.length;a++)if(m[a].key==c){m.splice(a,1);break}};
+window.JOT_removeAllListenersForName=function(c){for(var a=0;a<m.length;a++)m[a].eventName==c&&m.splice(a,1)};window.JOT_postEvent=function(c,a,b){var e={eventName:c,eventSrc:a||{},payload:b||{}};if(window.JOT_fullyLoaded)for(a=m.length,b=0;b<a&&b<m.length;b++){var f=m[b];f&&f.eventName==c&&(e.listenerCompId=f.compId||d,(f=typeof f.handler==h?f.handler:window[f.handler])&&f(e))}else window.JOT_delayedEvents.push({eventName:c,eventSrc:a,payload:b})};window.JOT_delayedEvents=[];
+window.JOT_fullyLoaded=!1;window.JOT_formatRelativeToNow=function(c,a){var b=((new Date).getTime()-c)/6E4;if(1440<=b||0>b)return null;var e=0;60<=b&&(b/=60,e=2);2<=b&&e++;return a?window.JOT_siteRelTimeStrs[e].replace(g,Math.floor(b)):window.JOT_userRelTimeStrs[e].replace(g,Math.floor(b))}; })()
+</script>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/d39cce/system/app/pagetypes/announcements/announcements.css" />
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/nstricklandkealing/home","deleted":false,"title":"Home","dir":"ltr"},{"path":"/site/nstricklandkealing/home/advanced-math-7","deleted":false,"title":"Advanced Math 7","dir":"ltr"}];
+  var JOT_clearDotPath = 'https://ssl.gstatic.com/sites/p/d39cce/system/app/images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"enableAnalytics":false,"pageSharingId":"jotspot_page","enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"NStrickland - Kealing","isStartPageEnabled":false,"adsensePublisherId":null,"features":{"validateClientGvizDataSourceUrls":true,"contactStoreMigrationPollForGapi":true,"gapiLoaderUtil":true,"moreMobileStyleImprovements":true,"accessibleSortingButtons":true,"accumulativeBubblePanelCreation":true,"domainAnalyticsInGAOnly":true,"noCaptcha":true,"enableNewImageSlider":false,"fileCabinetScreenReaderFix":true,"updatedTosAndPrivacyLinks":null,"pageDrafts":false,"mobileOrientationFix":true,"plusBadge":false,"pdfEmbedSupport":false,"jsClickFix":true},"isPublic":true,"isConsumer":true,"serverFlags":{"cajaBaseUrl":"//www.gstatic.com/caja","cajaDebugMode":false},"onepickBaseUrl":"https://docs.google.com","domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://www.google.com/a/SelectSession?continue\u003dhttps://sites.google.com/site/nstricklandkealing/home/advanced-math-7\u0026service\u003djotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/d39cce/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/d39cce/system/js/codemirror.js","https://ssl.gstatic.com/sites/p/d39cce/system/app/css/codemirror_css.css","https://ssl.gstatic.com/sites/p/d39cce/system/js/trog_edit__en.js","https://ssl.gstatic.com/sites/p/d39cce/system/app/css/trogedit.css","/site/nstricklandkealing/_/rsrc/1448288490000/system/app/css/editor.css","https://ssl.gstatic.com/sites/p/d39cce/system/app/css/codeeditor.css","/site/nstricklandkealing/_/rsrc/1448288490000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/nstricklandkealing","name":"nstricklandkealing","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/home","parentWuid":"wuid:gx:48a957adb53c655b","siteLocale":"en","timeZone":"America/Los_Angeles","type":"announcements","title":"Advanced Math 7","locale":"en","wuid":"wuid:gx:76bedd1b68c2bb4d","revision":6,"path":"/home/advanced-math-7","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"advanced-math-7","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/announcements","title":"Announcements"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false},"gadgets":{"baseUri":"/site/nstricklandkealing/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="Advanced Math 7 - NStrickland - Kealing" />
+<meta itemprop="name" content="Advanced Math 7 - NStrickland - Kealing" />
+<meta property="og:title" content="Advanced Math 7 - NStrickland - Kealing" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/sites/p/d39cce/system/app/themes/lavenderpanel/standard-css-lavenderpanel-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="/site/nstricklandkealing/_/rsrc/1448288490000/system/app/css/camelot/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/nstricklandkealing/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>Advanced Math 7 - NStrickland - Kealing</title>
+<link type="application/atom+xml" rel="alternate" href="https://sites.google.com/site/nstricklandkealing/home/advanced-math-7/posts.xml" title="Atom feed for nstricklandkealing:Advanced Math 7" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+<td id="sites-header-title" class="" role="banner"><div class="sites-header-cell-buffer-wrapper"><h2><a href="https://sites.google.com/site/nstricklandkealing/" dir="ltr" id="sites-chrome-userheader-title">NStrickland - Kealing</a></h2></div></td><td class="sites-layout-searchbox  "><div class="sites-header-cell-buffer-wrapper"><form id="sites-searchbox-form" action="/site/nstricklandkealing/system/app/pages/search" role="search"><input type="hidden" id="sites-searchbox-scope" name="scope" value="search-site" /><input type="text" id="jot-ui-searchInput" name="q" size="20" value="" aria-label="Search this site" /><div id="sites-searchbox-button-set" class="goog-inline-block"><div role="button" id="sites-searchbox-search-button" class="goog-inline-block jfk-button jfk-button-standard" tabindex="0">Search this site</div></div></form></div></td>
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first parent " wuid="gx:48a957adb53c655b"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="/site/nstricklandkealing/home" jotId="wuid:gx:48a957adb53c655b" class="sites-navigation-link topLevel">Home</a></div><ul role="navigation" class="has-expander"><li class=""><div class="current-bg" jotId="wuid:gx:76bedd1b68c2bb4d" dir="ltr" style="padding-left: 38px;">Advanced Math 7</div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/site/nstricklandkealing/home/every-day-algebra" jotId="wuid:gx:172f735e5f790eb5" class="sites-navigation-link">Every Day Algebra</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/site/nstricklandkealing/home/extra-credit" jotId="wuid:gx:362d4505779ced1" class="sites-navigation-link">Extra Credit</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/site/nstricklandkealing/home/mathcounts" jotId="wuid:gx:746aca77244a8ef7" class="sites-navigation-link">Mathcounts</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="/site/nstricklandkealing/home/spelling-bee" jotId="wuid:gx:73a3b61362e142b1" class="sites-navigation-link">Spelling Bee</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="/site/nstricklandkealing/system/app/pages/sitemap/hierarchy" jotId="wuid:gx:55207960aba72954" class="sites-navigation-link topLevel">Sitemap</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="/site/nstricklandkealing/home" dir="ltr">Home</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">Advanced Math 7</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><div>Ms. Huerta is the lead teacher for Advanced Math 7, so please use the link below to go to her page.</div><div> </div><div><a href="https://sites.google.com/a/kealing.org/huerta/home" rel="nofollow"><font color="#0066cc">https://sites.google.com/a/kealing.org/huerta/home</font></a></div><div> </div><div>If there's ever something I need to post for just my students, I will do so below.  </div><div><br /></div><div>Check your six weeks calendar if you are unsure of what the homework is, when the next quiz is, etc.</div><div><br /></div><div>Any other questions or requests, please email me:  <a href="mailto:nannette.strickland@austinisd.org">nannette.strickland@austinisd.org</a> </div><div><div> </div></div></div></td></tr></tbody></table>
+</div> 
+<div xmlns="http://www.w3.org/1999/xhtml" class="announcements">
+<div class="sites-clear" style="padding: 0 0 5px;">
+<img src="/site/nstricklandkealing/_/rsrc/1448288490000/system/app/images/icon_feed.gif" style="border:none; vertical-align: middle;" />
+<a href="https://sites.google.com/site/nstricklandkealing/home/advanced-math-7/posts.xml">
+                      Subscribe to posts</a>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/homeworkchangesforthefirstweekofdecember" dir="ltr">Homework Changes for the first week of December</a></h4>
+<span class="timestamp">
+<script type="text/javascript">
+      //<![CDATA[
+        function JOT_insertRelDate(timestamp, absTimeStr, isSiteLocale, dir) {
+          var relTimeStr = JOT_formatRelativeToNow(timestamp, isSiteLocale);
+          if (relTimeStr) {
+            if (isSiteLocale) {
+              document.write('<span timestamp="' + timestamp + '" issitelocale="' + isSiteLocale +
+                '" title="' + absTimeStr + '" dir="' + dir + '">' + relTimeStr + '<' + '/span>');
+            } else {
+              document.write('<span timestamp="' + timestamp + '" title="' + absTimeStr +
+              '" dir="' + dir + '">' + relTimeStr + '<' + '/span>');
+            }
+          } else {
+            document.write(absTimeStr);
+          }
+        }
+      //]]>
+</script>
+      
+    
+  
+  posted <script type="text/javascript">JOT_insertRelDate(1449003711228, "Dec 1, 2015, 1:01 PM", true, "ltr");</script><noscript>Dec 1, 2015, 1:01 PM</noscript> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">The Nov 30/Dec 1 homework says to watch "Graphing Simultaneous Equations" video and take notes. Replace that with watching and taking notes on Methods 1 and 2 in the "Simultaneous Equations" video, up through about 8:22.  DON'T FORGET TO ALSO FINISH YOUR PSJ AND ITS BONUS!!!!!<div><br /></div><div>The Dec 2/Dec 3 homework says to watch "Solving Systems through Substitution" video and take notes. Replace that with watching and taking notes on Method 3 in the "Simultaneous Equations" video, starting at about 8:22 and on to the end of the video.  DON'T FORGET TO ALSO FINISH SIGMA!!!!! </div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/forproportionalvsnon-proportionalnotes" dir="ltr">for Proportional vs Non-Proportional notes</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Nov 18, 2015, 6:54 AM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">In the video, we reference a little half-sheet of data.  You don't <u>need</u> to have it - you can just look at the examples and jot down notes as Ms. Huerta talks about them - but if you want it because it does show helpful information, feel free to print it for yourself.  I've attached it, and Ms. Huerta has posted on her website.</div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+                    
+                    
+                        | Attachments:
+                        
+                          
+                          <span dir="ltr">
+<img src="/site/nstricklandkealing/_/rsrc/1448288490000/system/app/images/attach_icons/icon_img.gif" style="margin: 0 0 -3px;" />
+<a href="/site/nstricklandkealing/home/advanced-math-7/forproportionalvsnon-proportionalnotes/Proportional%20V%20Non%20Proportional%20At%20a%20Glance.jpg" dir="ltr">Proportional V Non Proportional At a Glance.jpg</a>
+</span>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/becauseofthisweirdweek" dir="ltr">Because of this weird week...</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Nov 10, 2015, 3:41 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">...I wanted to post some info/reminders.  <div>1) I'm attaching the new six weeks calendar, since only one class has received it so far.</div><div>2) Everyone should have received their 2nd six weeks grade sheet printout with their final average.  Make sure there aren't any mistakes, clean out the old classworks that start with a 2, and bring the grade sheet back to me signed on Thurs/Fri for bonus!</div><div>3) Speaking of bonus, Saturday Morning Math Group is this Saturday!  This is another way to earn extra credit.  See my extra credit tab and/or Ms. Huerta's website for more specifics on the extra credit.</div><div>4) Periods 2A and 4A should be finished up through #10 (and that means including #10) on CW 3C by the time they come back to class on Friday.</div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+                    
+                    
+                        | Attachments:
+                        
+                          
+                          <span dir="ltr">
+<img src="/site/nstricklandkealing/_/rsrc/1448288490000/system/app/images/attach_icons/icon_word.gif" style="margin: 0 0 -3px;" />
+<a href="/site/nstricklandkealing/home/advanced-math-7/becauseofthisweirdweek/2015%20-%203rd%206%20Weeks%20Calendar.doc" dir="ltr">2015 - 3rd 6 Weeks Calendar.doc</a>
+</span>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/tomy7thperiodclass" dir="ltr">To my 7th period class</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Oct 30, 2015, 2:00 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Since we didn't actually have class today (but thank you for taking those Notebook Quizzes anyway!), here are some reminders:<div>1) The Advanced Equation Solving Bonus and the Writing Equations from Tables video notes will both be turned in on Tuesday.</div><div>2) So will CW 2J that I attached to the back of your notebook quiz.  If you lost it, get another copy from Ms. Huerta's website.  This should be completed by Tuesday.  If you can't figure out a question or two, call a friend, try and work it out, but ultimately skip it if you just can't do it.</div><div>3) Also for Tuesday is the regular HW listed on the calendar - Slope Video Notes and Quiz 2.2 Corrections are both due as well.</div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/twothingsforoct2930" dir="ltr">Two things for Oct. 29/30</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Oct 28, 2015, 4:08 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">1) Remember that the Notebook Quiz has moved to these two days.  So get organized!<div>2) The title of the video is "Writing Equations from Tables", which is slightly different than what we wrote on the calendar.</div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/somuchextracreditsolittletime" dir="ltr">So much extra credit, so little time...</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Oct 26, 2015, 1:33 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Now that you've seen your average at progress report time, you may be wondering how you can bring it up?  Besides staying on top of your game for the next two weeks as we finish out the grading period, there are several things you can do for bonus points!<div>1) Get your grade sheet printout signed and return it the very next class for 3 HW bonus points.  (A-day students will get this on Tuesday.)</div><div>2) Sigma problems are due next class (Tues &amp; Wed), so get as many of them attempted as you can.  No penalty for wrong answers, so try them all!  Each correct answer will be 1 Quiz bonus point.</div><div>3) You should have picked up the Advanced Equation Solving bonus after Quiz 2.2.  This is due at the end of this week (Thurs &amp; Fri.)  Each correct answer will be 1/2 point bonus on a CW, so you can get up to +5 on that.</div><div>4) Quiz 2.2 Corrections are due at teh beginning of next week (Mon &amp; Tues) for more Quiz bonus!!</div><div><br /></div><div>This is a limited time offer - don't ever expect this much bonus again.  But 2nd six weeks is especially challenging, and that's intensified because it's especially short, so we're giving extra grade boosters for this six weeks only!</div><div><br /></div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/getreadyforquiz21" dir="ltr">Get ready for Quiz 2.1!</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Oct 2, 2015, 12:49 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Besides watching the Translating Verbal Phrases video, you also need to get ready for Quiz 2.1 that we will take on Tuesday and Wednesday!  It will cover converting between Fractions, Decimals, and Percents; all the Pythagorean Theorem material (finding a missing leg or hypotenuse, testing if a triangle is a right triangle, using Pythagorean Triples, etc.); estimating the value of irrational numbers (to the nearest whole or the nearest tenth); translating verbal phrases; PLUS fraction review!  So make sure to learn from your Quiz 1.3 mistakes!!  You can use this Quiz 2.1 Review to help practice - the answer key is on the second page of the document.</div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+                    
+                    
+                        | Attachments:
+                        
+                          
+                          <span dir="ltr">
+<img src="/site/nstricklandkealing/_/rsrc/1448288490000/system/app/images/attach_icons/icon_word.gif" style="margin: 0 0 -3px;" />
+<a href="/site/nstricklandkealing/home/advanced-math-7/getreadyforquiz21/Quiz%202.1%20Review.docx" dir="ltr">Quiz 2.1 Review.docx</a>
+</span>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/pythagoreantheorempart1video" dir="ltr">Pythagorean Theorem Part 1 video</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Sep 28, 2015, 5:15 PM</span> by Nannette S
+
+                    
+                  </span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">A couple of people have asked about the beginning of the Part 1 video.  Due to an editing error, the first few seconds of the audio was lost.  However, it was just introducing the names of the sides of a right triangle, and what letters represent them.  The two short sides (which are also the sides that make the right angle) are called the legs, and these sides are represented by the letters a and b.  Which leg is which of those two letters does not matter.  The longest side (the side across from the right angle) is called the hypotenuse, and it is always the c value.  <div>Now, go back to the video and keep taking notes!</div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/useyoursixweekscalendar" dir="ltr">Use your six weeks calendar!</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Sep 16, 2015, 1:13 PM</span> by Nannette S
+
+                    
+                         
+                        <span class="updatedTime">
+                          [
+  
+  
+  
+  
+  updated <span dir="ltr">Sep 16, 2015, 1:16 PM</span>
+]
+                        </span>
+</span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">Don't know what to do for HW?  Unsure of when something is due??  Wondering what will be on the next quiz??  Then go to your six weeks calendar - all your answers are there.  At the bottom of each square/day, the homework is listed (usually in <i>italics</i>.) Assume that the regular day-to-day stuff is due the following class.  However, things like PSJ, Sigma, Quiz Corrections, etc usually have a few days to be completed and turned in.  <div>Referring to your calendar is going to be important as we continue our video notes.  Many of the videos have been on our YouTube channel for a while (and therefore will be down towards the bottom), so you are going to have to read carefully and find the correctly titled videos to watch.</div><div>Lost your calendar?  Go to Ms. Huerta's site and <u>download</u> / print a new one now! </div><div><a href="https://sites.google.com/a/kealing.org/huerta/home/handouts" rel="nofollow">https://sites.google.com/a/kealing.org/huerta/home/handouts</a>  </div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="announcement">
+<h4><a href="/site/nstricklandkealing/home/advanced-math-7/addingandsubtractingfractionsvideo" dir="ltr">Adding and Subtracting Fractions video...</a></h4>
+<span class="timestamp">
+                    
+                    
+  
+  
+  
+  
+  posted <span dir="ltr">Sep 14, 2015, 2:24 PM</span> by Nannette S
+
+                    
+                         
+                        <span class="updatedTime">
+                          [
+  
+  
+  
+  
+  updated <span dir="ltr">Sep 14, 2015, 4:39 PM</span>
+]
+                        </span>
+</span>
+<p>
+<table cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr">... is finally up!  Here's the link:  <a href="https://www.youtube.com/watch?v=NUhyYynycwg">https://www.youtube.com/watch?v=NUhyYynycwg</a><div><div><br /></div><div>And I'm sorry, but it's long.  <span style="font-size:13.3333px"> So here are a few tips for you to help cut that down a bit.</span></div></div><div><span style="font-size:13.3333px">1) In the beginning (on the title page), I'm giving you some note-taking tips/reminders.  You might want to listen to that at 1.25 or 1.5 speed.  You can change the audio speed by clicking the 'Settings' gear wheel in the lower right hand corner (close to the full screen button.)  Then you can slow it back down when we get to the math.</span></div><div><span style="font-size:13.3333px">2) After each set of Do Now problems, once you have tried the questions, you can also speed up the audio as I explain how I work the problems.  Just make sure you check your answers against mine - if they differ, you should go back and rewatch it at normal speed to see where you went wrong so you can <u>fix your work</u>!</span></div><div><span style="font-size:13.3333px">3) And there's nothing that says you have to watch it all at once.  Watch some of the video, and once you are at a good stopping point, take a quick brain break and come back to the video and your notes in a few minutes.</span></div></div></td></tr></tbody></table>
+</p>
+<div class="postfooter">
+<p>
+</p>
+</div>
+</div>
+<div class="sites-clear" style="padding: 0 0 10px 5px;">
+<p>
+<div class="sites-pagination sites-admin-header-right" dir="ltr"><div class="sites-pagination-info" dir="ltr">1-10 of 53</div><div role="button" id="sites-pagination-prev-link-top" class="goog-inline-block jfk-button jfk-button-standard jfk-button-narrow jfk-button-disabled" aria-disabled="true"><span class="sites-camelot-icon sites-pagination-icon-prev"></span></div><div role="button" id="sites-pagination-next-link-top" class="goog-inline-block jfk-button jfk-button-standard jfk-button-narrow jfk-button-disabled" aria-disabled="true"><span class="sites-camelot-icon sites-pagination-icon-next"></span></div></div>
+</p>
+</div>
+</div>
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div id="sites-attachments-container">
+</div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://www.google.com/a/UniversalLogin?service=jotspot&amp;continue=https://sites.google.com/site/nstricklandkealing/home/advanced-math-7">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/site/nstricklandkealing/system/app/pages/recentChanges">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="/site/nstricklandkealing/system/app/pages/reportAbuse" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-onebar-footer">
+</div>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="https://ssl.gstatic.com/sites/p/d39cce/system/js/jot_min_announcements_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                JOT_postEvent('moduleLoad');
+              </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+      
+          sites.core.Analytics.createTracker();
+          sites.core.Analytics.trackPageview();
+        
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+                    sites.Searchbox.initialize(
+                        'sites-searchbox-search-button',
+                        {"object":[]}['object'],
+                        'search-site',
+                        {"label":"Configure search options...","url":"/site/nstricklandkealing/system/app/pages/admin/settings"});
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", true);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+          var domHelper = goog.dom.getDomHelper();
+          var paginatorPageJs = new sites.components.Paginator(domHelper);
+          paginatorPageJs.initListeners('sites-pagination-prev-link-top', 'sites-pagination-next-link-top', 53,
+              0, 10, 'asc', 'announcements');
+        </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('https://sites.google.com/site/nstricklandkealing/_/tz', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+</html>
