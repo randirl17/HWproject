@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import urllib
+from bs4 import BeautifulSoup
 
 def urlget(url,endfile):
   try:
@@ -14,16 +15,17 @@ def urlget(url,endfile):
         h.write(text)
         h.close()
   except IOError:
-    print 'problem reading url:', link
+    print('problem reading url:', link)
 
 def Jap(file):
-  j=open(file,'r')
-  jtxt=j.readlines()
-  j.close()
-  for line in jtxt:
-    if ">-Homework" in line:
-        return line
-  return
+  soup=BeautifulSoup(open(file))
+  column=soup.find_all(class_='sites-layout-tile sites-tile-name-content-1') #find general section with HW
+  HWmatch=re.findall(r'Homework[\s\S]+',str(column[0]))
+  match=re.findall(r'">([-\w\d\s,/]+)</font>',str(HWmatch[0]))
+  return match
+  
+
+
 
 def HWscript(filename):
   dirname='./sitefiles'
@@ -38,7 +40,7 @@ def HWscript(filename):
     urlget(link,dest_name)  #write html to txt files
     if "Jap" in urlparts[0]:  JapHW=Jap(dest_name)
   f.close()
-#  z=open('HWlist.txt','a')
+
   
 
 
