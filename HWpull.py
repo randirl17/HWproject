@@ -8,19 +8,38 @@ import sys
 import urllib.request
 from bs4 import BeautifulSoup
 import datetime as dt
+from html.parser import HTMLParser
 
 def urlget(url,endfile):
   try:
       ufile = urllib.request.urlopen(url)
       udict = dict(ufile.info())
       if 'text/html' in udict['Content-Type']:
- #       print("Making txt file.")
         text=str(ufile.read())
         h=open(endfile,'w')
         h.write(text)
         h.close()
   except IOError:
-    print('problem reading url:', link)
+    print('problem reading url:', url)
+
+class MLStripper(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.reset()
+        self.strict = False
+        self.convert_charrefs= True
+        self.fed = []
+    def handle_data(self, d):
+        self.fed.append(d)
+    def get_data(self):
+        return list(self.fed)
+
+def strip_tags(html):
+#    parser = HTMLParser()
+#    html = parser.unescape(html)
+    s = MLStripper()
+    s.feed(html)
+    return s.get_data()
 
 def Jap(file):
   soup=BeautifulSoup(open(file),"lxml")
@@ -35,10 +54,9 @@ def Math(file):
   a=soup.find(class_="announcement").div.contents
   newa=[]
   dicta={}
-  for i in range(len(a)):
-    newa.append(str(a[i]).strip("</div>"))
+  stripped = strip_tags(str(a))
   dicta['title']=title
-  dicta['HW']=newa
+  dicta['HW']=stripped
   return dicta
   
 def Math2(file):
@@ -50,11 +68,13 @@ def Math2(file):
   tomorrow = tomor.strftime("%m/%d") + r'\n'
   tomor_ind = str(table[2]).index(tomorrow)
   chunk = str(table[2])[today_ind:tomor_ind]  #cuts out chunk of table with today's assignment+html
-  for line in chunk.split('>'):
-    if len(line) > 3
-
-      #need to parse text out of html tags
-  return
+  actual = strip_tags(chunk)  #need to parse text out of html tags
+  justtext = []
+  for piece in actual:
+    if not piece.startswith("\\"):
+      noreturn = piece.replace(r'\n','')
+      justtext.append(noreturn)  
+  return justtext
 
 def Sci(file):
   return
@@ -78,7 +98,6 @@ def HWscript(filename):
 
   print()
   print("Japanese")
-#  print(JapHW)
   for Jitems in JapHW:  print(Jitems)
   print()
   print("Math")
@@ -86,8 +105,7 @@ def HWscript(filename):
   for Mitems in MathHW['HW']:  print(Mitems)
   print()
   print("Math part 2")
-  print(Math2HW)
-#  for M2items in Math2HW:  print(M2items)
+  for M2items in Math2HW:  print(M2items)
   print()
   print("Science")
   print(SciHW)
