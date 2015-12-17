@@ -77,7 +77,19 @@ def Math2(file):
   return justtext
 
 def Sci(file):
-  return
+  soup = BeautifulSoup(open(file),"lxml")
+  HW = {}
+  today = dt.datetime.today().strftime("%B %d")
+  month = dt.datetime.today().strftime('%B')
+  date = month[:3] + ' ' + dt.datetime.today().strftime("%d")
+  yest = dt.datetime.today() + dt.timedelta(days=-1)
+  yester = month[:3] + ' ' + yest.strftime('%d')
+  for line in soup('b'):
+    if date in str(line) or yester in str(line):
+      title = line.next_element
+      assignment = line.next_element.next_element.next_element
+  HW[title] = assignment
+  return HW
 
 def HWscript(filename):
   dirname='./sitefiles'
@@ -92,7 +104,7 @@ def HWscript(filename):
     urlget(link,dest_name)  #write html to txt files
     if "Jap" in urlparts[0]:  JapHW=Jap(dest_name)
     if "Math" == urlparts[0]:  MathHW=Math(dest_name)
-    if "Science" == urlparts[0]:  SciHW=''
+    if "Science" == urlparts[0]:  SciHW=Sci(dest_name)
     if "Math2" == urlparts[0]:  Math2HW=Math2(dest_name)
   f.close()
 
@@ -108,15 +120,13 @@ def HWscript(filename):
   for M2items in Math2HW:  print(M2items)
   print()
   print("Science")
-  print(SciHW)
-#  for Sitems in SciHW:  print(Sitems)
-  
-
-
-
-    
+  for key in SciHW:
+    print(key)
+    print(SciHW[key])
   return
 
+#make date part of HWscript, and pass dates to programs
+#send info to html file to display in browser
 
 
 def main():
