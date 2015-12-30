@@ -9,8 +9,10 @@ import urllib.request
 from bs4 import BeautifulSoup
 import datetime as dt
 from html.parser import HTMLParser
+import HWhtml
 
 def urlget(url,endfile):
+#pull html from website and save as local file
   try:
       ufile = urllib.request.urlopen(url)
       udict = dict(ufile.info())
@@ -23,6 +25,7 @@ def urlget(url,endfile):
     print('problem reading url:', url)
 
 class MLStripper(HTMLParser):
+#for stripping html tags from sections of txt file
     def __init__(self):
         super().__init__()
         self.reset()
@@ -35,13 +38,12 @@ class MLStripper(HTMLParser):
         return list(self.fed)
 
 def strip_tags(html):
-#    parser = HTMLParser()
-#    html = parser.unescape(html)
     s = MLStripper()
     s.feed(html)
     return s.get_data()
 
 def Jap(file):
+#This website updates regularly, so the 1st post under the "Homework" header is the relevant info.
   soup=BeautifulSoup(open(file),"lxml")
   column=soup.find_all(class_='sites-layout-tile sites-tile-name-content-1') #find general section with HW
   HWmatch=re.findall(r'Homework[\s\S]+',str(column[0]))
@@ -49,23 +51,29 @@ def Jap(file):
   return match
   
 def Math(file):
+#This website updates regularly, with the most recent announcement containing any HW updates.
   soup=BeautifulSoup(open(file),"lxml")
   title=soup.find(class_="announcement").h4.string
   a=soup.find(class_="announcement").div.contents
-  newa=[]
   dicta={}
   stripped = strip_tags(str(a))
   dicta['title']=title
   dicta['HW']=stripped
   return dicta
   
-def Math2(file):
+def Math2(file,date):
+#This website contains a calendar in html table form of all the HW assignments for the month.
+#Search table by date: 12/11 (B) etc.
   soup=BeautifulSoup(open(file),"lxml")
   table=list(soup.tbody.tr.td.div.children)
-  today = dt.datetime.today().strftime("%m/%d")+r'\n'
+  today = date.strftime("%m/%d")+r'\n'
+  if today not in str(table[2]):
+    today = '12/10'
   today_ind = str(table[2]).index(today)
-  tomor = dt.datetime.today() + dt.timedelta(days=1)
+  tomor = date + dt.timedelta(days=1)
   tomorrow = tomor.strftime("%m/%d") + r'\n'
+  if tomorrow not in str(table[2]):
+    tomorrow = '12/11'
   tomor_ind = str(table[2]).index(tomorrow)
   chunk = str(table[2])[today_ind:tomor_ind]  #cuts out chunk of table with today's assignment+html
   actual = strip_tags(chunk)  #need to parse text out of html tags
@@ -76,62 +84,70 @@ def Math2(file):
       justtext.append(noreturn)  
   return justtext
 
-def Sci(file):
+def Sci(file,date):
+#This website has a list of all HW assignments for the month.  Search bold headers for date:  Dec 13/14 etc
   soup = BeautifulSoup(open(file),"lxml")
   HW = {}
-  today = dt.datetime.today().strftime("%B %d")
-  month = dt.datetime.today().strftime('%B')
-  date = month[:3] + ' ' + dt.datetime.today().strftime("%d")
-  yest = dt.datetime.today() + dt.timedelta(days=-1)
-  yester = month[:3] + ' ' + yest.strftime('%d')
+  month = date.strftime('%b')
+  today = month + ' ' + date.strftime("%d")
+  yest = date + dt.timedelta(days=-1)
+  yester = month + ' ' + yest.strftime('%d')
+  dayb4 = date + dt.timedelta(days=-2)  #over weekends, may need to go back 3 days to get match
+  daybefore = month + ' ' + dayb4.strftime('%d')
+  twodays = date + dt.timedelta(days=-3)
+  twobefore = month + ' ' + twodays.strftime('%d')
+  print(today, yester)
+  title = today 
   for line in soup('b'):
-    if date in str(line) or yester in str(line):
+    if today in str(line) or yester in str(line) or daybefore in str(line) or twobefore in str(line):
       title = line.next_element
       assignment = line.next_element.next_element.next_element
+  if title == today:  assignment = "No assignment found for today's date: " + str(today) 
   HW[title] = assignment
   return HW
 
 def HWscript(filename):
-  dirname='./sitefiles'
+  dirname = './sitefiles'
   if not os.path.exists(dirname):  os.mkdir(dirname)
-  f=open(filename,'r') #open and read sites.txt list
+#  date = dt.datetime.today() 
+  date = dt.datetime.today() - dt.timedelta(days=17)
+  f = open(filename,'r') #open and read sites.txt list, formatted as subj: url
   for line in f:
-    urlparts=line.split(":")
-    classfile=urlparts[0].replace(' ','')+'.txt'
-    site=urlparts[2]
-    link=urlparts[1]+":"+site[:-1]
-    dest_name=os.path.join(dirname,classfile)
-    urlget(link,dest_name)  #write html to txt files
-    if "Jap" in urlparts[0]:  JapHW=Jap(dest_name)
-    if "Math" == urlparts[0]:  MathHW=Math(dest_name)
-    if "Science" == urlparts[0]:  SciHW=Sci(dest_name)
-    if "Math2" == urlparts[0]:  Math2HW=Math2(dest_name)
+    urlparts = line.split(":")
+    classfile = urlparts[0].replace(' ','') + '.txt'
+    site = urlparts[2]
+    link = urlparts[1] + ":" + site[:-1]
+    dest_name = os.path.join(dirname,classfile)
+    urlget(link,dest_name)  #write html from web to txt files
+    if "Jap" in urlparts[0]:  JapHW = Jap(dest_name)
+    if "Math" == urlparts[0]:  MathHW = Math(dest_name)
+    if "Sci" in urlparts[0]:  SciHW = Sci(dest_name,date)
+    if "Math2" == urlparts[0]:  Math2HW = Math2(dest_name,date)
   f.close()
-
-  print()
-  print("Japanese")
-  for Jitems in JapHW:  print(Jitems)
-  print()
-  print("Math")
-  print(MathHW['title'])
-  for Mitems in MathHW['HW']:  print(Mitems)
-  print()
-  print("Math part 2")
-  for M2items in Math2HW:  print(M2items)
-  print()
-  print("Science")
-  for key in SciHW:
-    print(key)
-    print(SciHW[key])
+  HWhtml.makehtml(JapHW, MathHW, Math2HW, SciHW, 'HWpost.html')
+  
+#  print()
+#  print("Japanese")
+#  for Jitems in JapHW:  print(Jitems)
+#  print()
+#  print("Math")
+#  print(MathHW['title'])
+#  for Mitems in MathHW['HW']:  print(Mitems)
+#  print()
+#  print("Math part 2")
+#  for M2items in Math2HW:  print(M2items)
+#  print()
+#  print("Science")
+#  for key in SciHW:
+#    print(key)
+#    print(SciHW[key])
   return
 
-#make date part of HWscript, and pass dates to programs
-#send info to html file to display in browser
 
 
 def main():
-    img_urls = HWscript(sys.argv[1])
-
+    HWscript(sys.argv[1])
+    
 
 if __name__ == '__main__':
   main()
