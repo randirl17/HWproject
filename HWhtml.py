@@ -4,8 +4,7 @@ blank html template
 import sys
 import datetime as dt
 
-def makehtml(hw1, hw2, hw3, hw4, name):
-  date = dt.datetime.today() - dt.timedelta(days=10)
+def makehtml(date, hw1, hw2, hw3, hw4, name):
   prettydate = date.strftime('%B %d, %Y')
   with open(name,'w') as f:
       f.write('<html>')
@@ -20,7 +19,7 @@ def makehtml(hw1, hw2, hw3, hw4, name):
       f.write('}')
       f.write('</style>')
       f.write('<h1>')
-      f.write(prettydate)
+      f.write('Homework for ' + prettydate)
       f.write('</h1>')
       f.write('<h2>')
       f.write("A Day:")
@@ -32,7 +31,7 @@ def makehtml(hw1, hw2, hw3, hw4, name):
       f.write('History')
       f.write('</h3>')
       f.write('<p>')
-      f.write('')
+      f.write('History HW goes here.')
       f.write('</p>')
       f.write('<h3 class="class">')
       f.write('Japanese')
@@ -66,7 +65,7 @@ def makehtml(hw1, hw2, hw3, hw4, name):
       f.write('</h3>')
       for key in hw4:
           f.write('<p>')
-          f.write(hw4[key])
+          f.write(str(hw4[key]))
           f.write('</p>')
       f.write('<h3 class="class">')
       f.write('English')

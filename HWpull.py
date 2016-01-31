@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 import datetime as dt
 from html.parser import HTMLParser
 import HWhtml
+import string
 
 def urlget(url,endfile):
 #pull html from website and save as local file
@@ -68,12 +69,12 @@ def Math2(file,date):
   table=list(soup.tbody.tr.td.div.children)
   today = date.strftime("%m/%d")+r'\n'
   if today not in str(table[2]):
-    today = '12/10'
+    today = '2/22'
   today_ind = str(table[2]).index(today)
   tomor = date + dt.timedelta(days=1)
   tomorrow = tomor.strftime("%m/%d") + r'\n'
   if tomorrow not in str(table[2]):
-    tomorrow = '12/11'
+    tomorrow = '2/23'
   tomor_ind = str(table[2]).index(tomorrow)
   chunk = str(table[2])[today_ind:tomor_ind]  #cuts out chunk of table with today's assignment+html
   actual = strip_tags(chunk)  #need to parse text out of html tags
@@ -86,31 +87,40 @@ def Math2(file,date):
 
 def Sci(file,date):
 #This website has a list of all HW assignments for the month.  Search bold headers for date:  Dec 13/14 etc
+#Since this is B day, it's always listed 2nd.
+#today 11, yest 10, 1b4 = 9, 2b4 = 8 
   soup = BeautifulSoup(open(file),"lxml")
   HW = {}
   month = date.strftime('%b')
-  today = month + ' ' + date.strftime("%d")
+  today = month + ' ' + date.strftime("%d").lstrip('0')
   yest = date + dt.timedelta(days=-1)
-  yester = month + ' ' + yest.strftime('%d')
+  yester = month + ' ' + yest.strftime('%d').lstrip('0') + '/' + date.strftime("%d").lstrip('0')  #this would be current
   dayb4 = date + dt.timedelta(days=-2)  #over weekends, may need to go back 3 days to get match
-  daybefore = month + ' ' + dayb4.strftime('%d')
+  daybefore = month + ' ' + dayb4.strftime('%d').lstrip('0') + '/' + yest.strftime('%d').lstrip('0')
   twodays = date + dt.timedelta(days=-3)
-  twobefore = month + ' ' + twodays.strftime('%d')
-  print(today, yester)
+  twobefore = month + ' ' + twodays.strftime('%d').lstrip('0') + '/' + dayb4.strftime('%d').lstrip('0')
+  threedays = date + dt.timedelta(days=-4)
+  threebefore = month + ' ' + threedays.strftime('%d').lstrip('0') + '/' + twodays.strftime('%d').lstrip('0')
+  print(today, yester, daybefore, twobefore, threebefore)
   title = today 
   for line in soup('b'):
-    if today in str(line) or yester in str(line) or daybefore in str(line) or twobefore in str(line):
+    if yester in str(line) or daybefore in str(line) or twobefore in str(line) or threebefore in str(line):
       title = line.next_element
       assignment = line.next_element.next_element.next_element
   if title == today:  assignment = "No assignment found for today's date: " + str(today) 
   HW[title] = assignment
   return HW
 
+def Hist(file,date):
+
+  return
+
+
 def HWscript(filename):
   dirname = './sitefiles'
   if not os.path.exists(dirname):  os.mkdir(dirname)
-#  date = dt.datetime.today() 
-  date = dt.datetime.today() - dt.timedelta(days=17)
+  date = dt.datetime.today() 
+#  date = dt.datetime.today() - dt.timedelta(days=17)
   f = open(filename,'r') #open and read sites.txt list, formatted as subj: url
   for line in f:
     urlparts = line.split(":")
@@ -122,9 +132,9 @@ def HWscript(filename):
     if "Jap" in urlparts[0]:  JapHW = Jap(dest_name)
     if "Math" == urlparts[0]:  MathHW = Math(dest_name)
     if "Sci" in urlparts[0]:  SciHW = Sci(dest_name,date)
-    if "Math2" == urlparts[0]:  Math2HW = Math2(dest_name,date)
+    if "Math2" == urlparts[0]:  Math2HW = {'mathcal':  ''}#Math2(dest_name,date)
   f.close()
-  HWhtml.makehtml(JapHW, MathHW, Math2HW, SciHW, 'HWpost.html')
+  HWhtml.makehtml(date, JapHW, MathHW, Math2HW, SciHW, 'HWpost.html')
   
 #  print()
 #  print("Japanese")
@@ -146,7 +156,13 @@ def HWscript(filename):
 
 
 def main():
-    HWscript(sys.argv[1])
+  args = sys.argv[1:]
+
+  if not args:
+    print('usage: ./HWpull.py file')
+    sys.exit(1)
+
+  HWscript(args[0])
     
 
 if __name__ == '__main__':
